@@ -12,6 +12,7 @@ import Ellipse1 from "../../assets/Ellipse1.png";
 import Ellipse2 from "../../assets/Ellipse2.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
+import CarteEquip from "../../components/CarteEquip/CarteEquip";
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -129,7 +130,11 @@ function Accueil() {
         </div>
       </div>
       <section>
-        
+        <div className="container-fluid">
+          <div className="row">
+          <CarteEquip/>
+          </div>
+        </div>
       </section>
     </div>
   );
