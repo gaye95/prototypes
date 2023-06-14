@@ -81,7 +81,7 @@ function Accueil() {
       </div>
       <div className="container-fluid">
         <div className="row p-5">
-          <div className="col-6 text-start">
+          <div className="col-md-6 text-start">
             <h4>
               <strong>Voluptatem une mise en page, le
               texte définitif venant remplacer le faux venant remplacer</strong>
@@ -110,20 +110,22 @@ function Accueil() {
             <h5>Commencer maintenant</h5>
             </div>
           </div>
-          <div className="col-6" style={{ backgroundColor:"#f5f5f5" }}>
+          <div className="col-md-6" style={{ backgroundColor:"#f5f5f5" }}>
             <img src={images} alt="images"/>
           </div>
         </div>
       </div>
       <div className="container py-5">
-        <div className="row">
-          <div><h4 className="text-start"><strong>Nos applications</strong></h4></div>
-          <div className="d-flex justify-content-between p-5">
+        <div>
+          <h4 className="text-start"><strong>Nos applications</strong></h4>
+        </div>
+        <div className="d-flex justify-content-between p-5">
+        <div className="row d-flex justify-content-center justify-content-evenly p-5">
             {
               applications.map((el)=><Appli photo={el.photo} titre={el.titre} texte={el.texte}/>)
             }
-          </div>
         </div>
+          </div>
       </div>
       <section>a</section>
       <section style={{backgroundColor:'#f2f2f2'}}>
