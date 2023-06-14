@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.391833bd.css",
+    "main.js": "/static/js/main.a088f6d4.js",
+    "static/js/787.875fa36d.chunk.js": "/static/js/787.875fa36d.chunk.js",
+    "static/media/tel.png": "/static/media/tel.430d991b1696d015d4b5.png",
+    "static/media/images.png": "/static/media/images.1f8c7972b6cd8e56accc.png",
+    "static/media/france.jpg": "/static/media/france.340e90d9b91d1bbbbf64.jpg",
+    "index.html": "/index.html",
+    "main.391833bd.css.map": "/static/css/main.391833bd.css.map",
+    "main.a088f6d4.js.map": "/static/js/main.a088f6d4.js.map",
+    "787.875fa36d.chunk.js.map": "/static/js/787.875fa36d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.391833bd.css",
+    "static/js/main.a088f6d4.js"
+  ]
+}
