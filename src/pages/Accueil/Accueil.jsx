@@ -27,7 +27,6 @@ function Accueil() {
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" }
   ];
   const fewnu = [
-
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Simplicité d'usage", texte: "en imprimerie, une suite de mots sans signification" },
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Accécibilité en ligne", texte: "en imprimerie, une suite de mots sans signification" },
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Suivie commerciale", texte: "en imprimerie, une suite de mots sans signification" }
@@ -39,7 +38,7 @@ function Accueil() {
                   {nom:"Mouhamed Badiane", profession:"Graphic, ui/ux design"},
                   {nom:"Daouda Senghor", profession:"web developpement"}
   ];
-  
+
   const logos = [
     <img src={volkeno } alt="images"/>,
     <img src={bakeli } alt="images"/>,
@@ -159,8 +158,7 @@ function Accueil() {
       <section style={{backgroundColor:'#f2f2f2'}}>
       <div className="container py-5" style={{backgroundColor:'#f2f2f2'}}>
       <div><h4 className="text-start"><strong>Pourquoi Fewnu </strong></h4></div>
-        <div className="row d-flex justify-content-center justify-content-evenly p-5">
-          
+        <div className="row d-flex justify-content-center justify-content-evenly p-5"> 
             {
               fewnu.map((el)=><CarteFewnu icone={el.icone} titre={el.titre} texte={el.texte}/>)
             }
@@ -170,7 +168,7 @@ function Accueil() {
       <section className="p-5">
         <div className="container">
         <div><h4 className="text-start"><strong>Notre équipe</strong></h4></div>
-          <div className="row d-flex justify-content-center justify-content-evenly">
+          <div className="row d-flex justify-content-center justify-content-evenly py-4">
             {
               equipe.map((carte)=><CarteEquip nom={carte.nom} profession={carte.profession}/>)
             }
@@ -190,6 +188,16 @@ function Accueil() {
             {
               logos.map((logo) => <div>{ logo}</div>)
             }
+          </div>
+        </div>
+      </section>
+      <section style={{ backgroundColor:"#f2f2f2" }}>
+        <div className="container">
+          <h4 className="d-flex justify-content-start py-3"><strong><u style={{  }}>AMBASSADEUR</u></strong></h4>
+          <div className="row">
+            <h3>
+              <strong>Devenez un ambassadeur et gagnez des <span style={{ color:"#0bcad4" }}>récompenses !</span></strong>
+            </h3>
           </div>
         </div>
       </section>
