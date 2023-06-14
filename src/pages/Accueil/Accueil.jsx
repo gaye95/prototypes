@@ -126,18 +126,20 @@ function Accueil() {
         </div>
       </div>
       <section>a</section>
-      <div className="container py-5">
-        <div className="row">
-          <div><h4 className="text-start"><strong>Pourquoi Fewnu </strong></h4></div>
-          <div className="d-flex justify-content-between p-5">
+      <section style={{backgroundColor:'#f2f2f2'}}>
+      <div className="container py-5" style={{backgroundColor:'#f2f2f2'}}>
+      <div><h4 className="text-start"><strong>Pourquoi Fewnu </strong></h4></div>
+        <div className="row d-flex justify-content-center justify-content-evenly p-5">
+          
             {
               fewnu.map((el)=><CarteFewnu icone={el.icone} titre={el.titre} texte={el.texte}/>)
             }
-          </div>
         </div>
       </div>
-      <section>
-        <div className="container-fluid">
+      </section>
+      <section className="p-5">
+        <div className="container">
+        <div><h4 className="text-start"><strong>Notre équipe</strong></h4></div>
           <div className="row d-flex justify-content-center justify-content-evenly">
             {
               equipe.map((carte)=><CarteEquip nom={carte.nom} profession={carte.profession}/>)

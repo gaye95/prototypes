@@ -9,8 +9,9 @@ import { CiTwitter } from "react-icons/ci";
 function CarteEquip({ nom, profession }) {
   const icones = [<CiFacebook size="35px"/>, <CiInstagram size="35px" />, <CiLinkedin size="35px" />, <CiTwitter size="35px" />];
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img className="my-3 mx-auto" variant="top" src={equipe} alt="equipe" style={{ width:"16rem" }} />
+    <div className="col-sm-3 d-flex justify-content-center">
+    <Card className="shadow mb-5 bg-body rounded" style={{ width: '18rem', border:'none' }}>
+      <Card.Img className="my-3 mx-auto" variant="top" src={equipe} alt="equipe" style={{ width:"14rem" }} />
       <Card.Body>
         <Card.Title>{nom}</Card.Title>
         <Card.Text>
@@ -23,6 +24,7 @@ function CarteEquip({ nom, profession }) {
         </div>
       </Card.Body>
     </Card>
+    </div>
   );
 };
 
