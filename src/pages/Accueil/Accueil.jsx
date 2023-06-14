@@ -187,9 +187,9 @@ function Accueil() {
       </section>
       <section>
         <div className="container-fluid">
-          <div className="mx-5">
+          <div className=" d-flex justify-content-center justify-content-evenly align-items-center">
             {
-              logos.map((logo)=>logo)
+              logos.map((logo) => <div>{ logo}</div>)
             }
           </div>
         </div>
