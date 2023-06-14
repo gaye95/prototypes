@@ -14,6 +14,12 @@ import bleue from "../../assets/bleue.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
 import CarteEquip from "../../components/CarteEquip/CarteEquip";
+import bakeli from "../../assets/bakeli.png";
+import elikia from "../../assets/elikia.png";
+import redteam from "../../assets/redteam.png";
+import store from "../../assets/store.png";
+import tayeur from "../../assets/tayeur.png";
+import volkeno from "../../assets/volkeno.png";
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -33,6 +39,16 @@ function Accueil() {
                   {nom:"Mouhamed Badiane", profession:"Graphic, ui/ux design"},
                   {nom:"Daouda Senghor", profession:"web developpement"}
   ];
+  
+  const logos = [
+    <img src={volkeno } alt="images"/>,
+    <img src={bakeli } alt="images"/>,
+    <img src={ elikia} alt="images"/>,
+    <img src={ redteam} alt="images"/>,
+    <img src={ store} alt="images"/>,
+    <img src={ tayeur} alt="images"/>
+  ]
+
   return ( 
     <div className="accueil">
       <header><Contact /></header>
@@ -158,6 +174,22 @@ function Accueil() {
           <div className="row d-flex justify-content-center justify-content-evenly">
             {
               equipe.map((carte)=><CarteEquip nom={carte.nom} profession={carte.profession}/>)
+            }
+          </div>
+        </div>
+      </section>
+      <section style={{ backgroundColor:"#f2f2f2" }}>
+        <div className="container">
+          <div className="row p-4">
+          <h3 className="text-start">Nos partenaires</h3>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="container-fluid">
+          <div className="mx-5">
+            {
+              logos.map((logo)=>logo)
             }
           </div>
         </div>
