@@ -154,7 +154,6 @@ function Accueil() {
             backgroundRepeat: "no-repeat",
         }}
         >
-        
         </div>
       </section>
       <section style={{backgroundColor:'#f2f2f2'}}>
