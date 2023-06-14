@@ -15,6 +15,9 @@
     background-image: url('../../assets/bleue.png'); 
     animation-name: example;
     animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    position: relative;
+
   }
 
   @keyframes example {
