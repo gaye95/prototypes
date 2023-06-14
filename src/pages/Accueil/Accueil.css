@@ -9,3 +9,16 @@
     margin-left:-30px;
     position:relative;
   }
+
+  .animé:hover{
+    
+    background-image: url('../../assets/bleue.png'); 
+    animation-name: example;
+    animation-duration: 4s;
+  }
+
+  @keyframes example {
+    0%   {background-image: url('../../assets/bleue.png'); left:0px; top:0px;}
+    75%  {background-image: url('../../assets/rouge.png'); left:0px; top:200px;}
+    100%   {background-image: url('../../assets/bleue.png'); left:0px; top:0px;}
+  }

@@ -10,6 +10,7 @@ import Appli from "../../components/Appli/Appli";
 import tel from "../../assets/tel.png";
 import Ellipse1 from "../../assets/Ellipse1.png";
 import Ellipse2 from "../../assets/Ellipse2.png";
+import bleue from "../../assets/bleue.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
 import CarteEquip from "../../components/CarteEquip/CarteEquip";
@@ -26,16 +27,16 @@ function Accueil() {
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Suivie commerciale", texte: "en imprimerie, une suite de mots sans signification" }
   ];
 
-  const equipe = [{ nom: "Daouda Senghor", profession: "web developpement" },
+  const equipe = [
+                  { nom: "Daouda Senghor", profession: "web developpement" },
                   { nom: "Ndiaga Sall", profession: "ui/ux design" },
                   {nom:"Mouhamed Badiane", profession:"Graphic, ui/ux design"},
                   {nom:"Daouda Senghor", profession:"web developpement"}
-  
   ];
-  return (
+  return ( 
     <div className="accueil">
-      <section><div><Contact /></div></section>
-      <section><div><Navebar /></div></section>
+      <header><Contact /></header>
+      <section><Navebar /></section>
       <div
             className = "image"
             style = {{
@@ -127,7 +128,19 @@ function Accueil() {
         </div>
           </div>
       </div>
-      <section>a</section>
+      <section>
+        <div className="animé"
+          style = {{
+            height: "668px",
+            width: "100%",
+            backgroundImage: `url(${bleue})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+        }}
+        >
+        
+        </div>
+      </section>
       <section style={{backgroundColor:'#f2f2f2'}}>
       <div className="container py-5" style={{backgroundColor:'#f2f2f2'}}>
       <div><h4 className="text-start"><strong>Pourquoi Fewnu </strong></h4></div>

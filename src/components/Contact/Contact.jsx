@@ -16,7 +16,7 @@ function Contact() {
     <Navbar className="p-3" collapseOnSelect expand="lg" bg="" variant="" style={{ height:"15px"}}>
       <Container>
         <Navbar.Brand href="#home">
-          <div className="d-flex align-items-between">
+          <div className="d-flex">
             <BsEnvelopeFill className="my-1" style={{ color:"#0bcad4" }} /><h6 className="mx-1 my-1">contact.fewnu@gmail.com</h6>
             <FcPhoneAndroid className="my-1 mx-2" style={{ color:"#0bcad4" }} /><h6 className="my-1">+221781646424</h6>
           </div>
