@@ -9,7 +9,7 @@ import { CiTwitter } from "react-icons/ci";
 function CarteEquip({ nom, profession }) {
   const icones = [<CiFacebook size="35px"/>, <CiInstagram size="35px" />, <CiLinkedin size="35px" />, <CiTwitter size="35px" />];
   return (
-    <div className="col-sm-3 d-flex justify-content-center">
+    <div className="col-md-3 d-flex justify-content-center">
     <Card className="shadow mb-5 bg-body rounded" style={{ width: '18rem', border:'none' }}>
       <Card.Img className="my-3 mx-auto" variant="top" src={equipe} alt="equipe" style={{ width:"14rem" }} />
       <Card.Body>
