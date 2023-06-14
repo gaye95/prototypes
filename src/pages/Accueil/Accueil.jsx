@@ -25,6 +25,13 @@ function Accueil() {
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Accécibilité en ligne", texte: "en imprimerie, une suite de mots sans signification" },
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Suivie commerciale", texte: "en imprimerie, une suite de mots sans signification" }
   ];
+
+  const equipe = [{ nom: "Daouda Senghor", profession: "web developpement" },
+                  { nom: "Ndiaga Sall", profession: "ui/ux design" },
+                  {nom:"Mouhamed Badiane", profession:"Graphic, ui/ux design"},
+                  {nom:"Daouda Senghor", profession:"web developpement"}
+  
+  ];
   return (
     <div className="accueil">
       <section><div><Contact /></div></section>
@@ -131,8 +138,10 @@ function Accueil() {
       </div>
       <section>
         <div className="container-fluid">
-          <div className="row">
-          <CarteEquip/>
+          <div className="row d-flex justify-content-center justify-content-evenly">
+            {
+              equipe.map((carte)=><CarteEquip nom={carte.nom} profession={carte.profession}/>)
+            }
           </div>
         </div>
       </section>
