@@ -12,7 +12,6 @@ import tel from "../../assets/tel.png";
 import Ellipse1 from "../../assets/Ellipse1.png";
 import Ellipse2 from "../../assets/Ellipse2.png";
 import bleue from "../../assets/bleue.png";
-import bleu from "../../assets/bleu.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
 import CarteEquip from "../../components/CarteEquip/CarteEquip";
