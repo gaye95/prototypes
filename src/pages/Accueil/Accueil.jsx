@@ -45,8 +45,8 @@ function Accueil() {
   const equipe = [
                   { nom: "Daouda Senghor", profession: "web developpement" },
                   { nom: "Ndiaga Sall", profession: "ui/ux design" },
-                  {nom:"Mouhamed Badiane", profession:"Graphic, ui/ux design"},
-                  {nom:"Daouda Senghor", profession:"web developpement"}
+                  { nom:"Mouhamed Badiane", profession:"Graphic, ui/ux design"},
+                  { nom:"Daouda Senghor", profession:"web developpement"}
   ];
 
   const logos = [
