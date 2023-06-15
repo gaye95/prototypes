@@ -3,6 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs";
 import { FaHandHoldingHeart } from "react-icons/fa";
+import { TbPhoneCall } from "react-icons/tb";
 import Contact from "../../components/Contact/Contact";
 import CarteFewnu from "../../components/CarteFewnu/CarteFewnu";
 import Navebar from "../../components/Navebar/Navebar";
@@ -11,15 +12,19 @@ import tel from "../../assets/tel.png";
 import Ellipse1 from "../../assets/Ellipse1.png";
 import Ellipse2 from "../../assets/Ellipse2.png";
 import bleue from "../../assets/bleue.png";
+import bleu from "../../assets/bleu.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
 import CarteEquip from "../../components/CarteEquip/CarteEquip";
+import Footer from "../../components/Footer/Footer";
 import bakeli from "../../assets/bakeli.png";
 import elikia from "../../assets/elikia.png";
 import redteam from "../../assets/redteam.png";
 import store from "../../assets/store.png";
 import tayeur from "../../assets/tayeur.png";
 import volkeno from "../../assets/volkeno.png";
+import ambassadeur from "../../assets/ambassadeur.png";
+import CarteApp from "../../components/CarteApp/CarteApp";
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -32,6 +37,12 @@ function Accueil() {
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Suivie commerciale", texte: "en imprimerie, une suite de mots sans signification" }
   ];
 
+  const carteapps= [
+    { nom:"Alkaly Badji", profession:"Dev Backend", texte:'Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux' },
+    { nom:"Oumy", profession:"Dev, web", texte:'Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux' },
+    { nom:"Mahmoud Barry", profession:"Dev Back-end", texte:'Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux' }
+  ];
+
   const equipe = [
                   { nom: "Daouda Senghor", profession: "web developpement" },
                   { nom: "Ndiaga Sall", profession: "ui/ux design" },
@@ -40,13 +51,13 @@ function Accueil() {
   ];
 
   const logos = [
-    <img src={volkeno } alt="images"/>,
-    <img src={bakeli } alt="images"/>,
-    <img src={ elikia} alt="images"/>,
-    <img src={ redteam} alt="images"/>,
-    <img src={ store} alt="images"/>,
-    <img src={ tayeur} alt="images"/>
-  ]
+    <img src={volkeno} alt="images" />,
+    <img src={bakeli} alt="images" />,
+    <img src={elikia} alt="images" />,
+    <img src={redteam} alt="images" />,
+    <img src={store} alt="images" />,
+    <img src={tayeur} alt="images" />
+  ];
 
   return ( 
     <div className="accueil">
@@ -72,7 +83,7 @@ function Accueil() {
                   <strong>
                   Le lorem ipsum est, en imprimerie, une suite de mots sans signification
                   utilisée à titre provisoire pour calibrer une mise en page, le
-                  texte définitif venant remplacer le faux-
+                  texte définitif venant remplacer le faux
                   </strong>
                 </p>
                 <div className="d-flex">
@@ -191,16 +202,85 @@ function Accueil() {
           </div>
         </div>
       </section>
-      <section style={{ backgroundColor:"#f2f2f2" }}>
-        <div className="container">
-          <h4 className="d-flex justify-content-start py-3"><strong><u style={{  }}>AMBASSADEUR</u></strong></h4>
-          <div className="row">
-            <h3>
-              <strong>Devenez un ambassadeur et gagnez des <span style={{ color:"#0bcad4" }}>récompenses !</span></strong>
-            </h3>
-          </div>
-        </div>
-      </section>
+      <section style={{ backgroundColor: "#f2f2f2" }}>
+            
+            <div className="container">
+              <div className="row">
+              <h2 className="text-start">Nos ambassadeurs</h2>
+                <div className="container">
+                <div className="row d-flex">
+                  <div className=" col ambassadeur">
+                    <h3>
+                    <strong>Devenez un ambassadeur et gagnez des <span style={{ color:"#0bcad4" }}>récompenses !</span></strong>
+                    </h3>
+                    <p className="text-start">
+                      <strong>                    
+                      Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum
+                      </strong>
+                    </p>
+                    <div className="d-flex">
+                      <BsCheckCircle className="my-1" style={{ color:"#0bcad4", width:"200px" }}/>
+                      <p className="text-start">
+                      <strong>
+                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                      </strong>
+                      </p>
+                    </div>
+                    <div className="pluse d-flex">
+                    <div>
+                    <button className="border border-none text-white p-2" style={{ backgroundColor:"#0bcad4", borderRadius:"50px" }}>
+                      EN SAVOIR PLUS
+                    </button>
+                    </div>
+                    <div className="d-flex">
+                    <button className="mx-3 text-white " style={{backgroundColor:"white", border:"solid #c7c7c7 2px", height:"45px", borderRadius:"75%" }}>
+                    <TbPhoneCall style={{ color:"#0bcad4" }}/>
+                    </button>
+                    <div className="text-start">
+                      <p>Hotline<br/><strong>78 164 64 24</strong></p>
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div className=" col images" style={{ height:"300px"  }}>
+                    <div style={{ 
+                                  backgroundSize: "cover",
+                                  backgroundRepeat: "no-repeat",
+                                  height:"100px",
+                                  backgroundPosition:"bottom"
+                      }}>
+                    <div className="">
+                      <img src={ambassadeur} alt="images"  style={{ height:"500px"}}/>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className="temoignages">
+              <div className="container">
+              <div className="row ">
+              <h3 className="text-start">Nos témoignages</h3>
+              <div className="d-flex justify-content-around">
+              {
+                carteapps.map((carte) => <CarteApp nom={carte.nom} profession={carte.profession} texte={carte.texte} />)
+              }
+              </div>
+              </div>
+              </div>
+          </section>
+          <section className="bg-dark p-3">
+            <div className="container">
+            <Footer/>
+            </div>
+          </section>
     </div>
   );
 };
