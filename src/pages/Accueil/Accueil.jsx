@@ -12,6 +12,7 @@ import tel from "../../assets/tel.png";
 import Ellipse1 from "../../assets/Ellipse1.png";
 import Ellipse2 from "../../assets/Ellipse2.png";
 import bleue from "../../assets/bleue.png";
+import bleu from "../../assets/bleu.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
 import CarteEquip from "../../components/CarteEquip/CarteEquip";
@@ -23,7 +24,7 @@ import store from "../../assets/store.png";
 import tayeur from "../../assets/tayeur.png";
 import volkeno from "../../assets/volkeno.png";
 import ambassadeur from "../../assets/ambassadeur.png";
-import CarteApp from "../../components/CarteApp/CarteApp";
+import CarteApp    from "../../components/CarteApp/CarteApp";
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -70,6 +71,7 @@ function Accueil() {
                backgroundImage: `url(${tel})`,
                backgroundSize: "cover",
                backgroundRepeat: "no-repeat",
+               backgroundPosition:"none"
             }}
          >
         <div className="container">
@@ -201,14 +203,14 @@ function Accueil() {
           </div>
         </div>
       </section>
-      <section style={{ backgroundColor: "#f2f2f2" }}>
+      <section className="p-5" style={{ backgroundColor: "#f2f2f2" }}>
             
-            <div className="container">
+            <div className="container-fluid">
               <div className="row">
               <h2 className="text-start">Nos ambassadeurs</h2>
                 <div className="container">
                 <div className="row d-flex">
-                  <div className=" col ambassadeur">
+                  <div className=" col-7 ambassadeur">
                     <h3>
                     <strong>Devenez un ambassadeur et gagnez des <span style={{ color:"#0bcad4" }}>récompenses !</span></strong>
                     </h3>
@@ -232,13 +234,13 @@ function Accueil() {
                     </div>
                     <div className="pluse d-flex">
                     <div>
-                    <button className="border border-none text-white p-2" style={{ backgroundColor:"#0bcad4", borderRadius:"50px" }}>
+                    <button className=" text-white p-2" style={{ backgroundColor:"#0bcad4", borderRadius:"50px" }}>
                       EN SAVOIR PLUS
                     </button>
                     </div>
                     <div className="d-flex">
-                    <button className="mx-3 text-white " style={{backgroundColor:"white", border:"solid #c7c7c7 2px", height:"45px", borderRadius:"75%" }}>
-                    <TbPhoneCall style={{ color:"#0bcad4" }}/>
+                    <button className="mx-3" style={{backgroundColor:"white", border:"solid #c7c7c7 2px", height:"45px", width:"45px", borderRadius:"50%" }}>
+                    <TbPhoneCall className="mx-auto" style={{ color:"#0bcad4" }}/>
                     </button>
                     <div className="text-start">
                       <p>Hotline<br/><strong>78 164 64 24</strong></p>
@@ -246,16 +248,17 @@ function Accueil() {
                     </div>
                     </div>
                   </div>
-                  <div className=" col images" style={{ height:"300px"  }}>
+                  <div className=" col-5  d-flex justify-content-end align-items-center images" style={{ height:"300px"  }}>
                     <div style={{ 
-                                  backgroundSize: "cover",
+                                  bacgroundSize:"cover",
                                   backgroundRepeat: "no-repeat",
-                                  height:"100px",
-                                  backgroundPosition:"bottom"
+                                  height:"400px",
+                                  width:"90%",
+                                  backgroundImage: `url(${bleu})`,
+                                  position:"relative",
+                                  marginTop:"250px",
                       }}>
-                    <div className="">
-                      <img src={ambassadeur} alt="images"  style={{ height:"500px"}}/>
-                    </div>
+                      <img className="images py-5" src={ambassadeur} alt="images"  style={{ height:"1233px", width:"950", marginTop:"-505px"}}/>
                     </div>
                   </div>
                 </div>
@@ -263,18 +266,16 @@ function Accueil() {
               </div>
             </div>
           </section>
-          <section className="temoignages">
-              <div className="container">
-              <div className="row ">
-              <h3 className="text-start">Nos témoignages</h3>
-              <div className="d-flex justify-content-around">
+          <section className="p-5">
+          <div className="container">
+          <div><h4 className="text-start"><strong>Notre équipe</strong></h4></div>
+            <div className="row d-flex justify-content-center justify-content-evenly py-4">
               {
                 carteapps.map((carte) => <CarteApp nom={carte.nom} profession={carte.profession} texte={carte.texte} />)
               }
-              </div>
-              </div>
-              </div>
-          </section>
+            </div>
+          </div>
+        </section>
           <section className="bg-dark p-3">
             <div className="container">
             <Footer/>
