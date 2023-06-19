@@ -218,12 +218,12 @@ function Accueil() {
               <h2 className="text-start">Nos ambassadeurs</h2>
                 <div className="container">
                 <div className="row d-flex">
-                  <div className=" col-7 ambassadeur">
+                  <div className=" col-7 col-sm ambassadeur">
                     <h3>
                     <strong>Devenez un ambassadeur et gagnez des <span style={{ color:"#0bcad4" }}>récompenses !</span></strong>
                     </h3>
                     <p className="text-start">
-                      <strong>                    
+                      <strong>
                       Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum le faux-texte dès qu'il est prêt ou que la mise en page est achevée. Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum
                       </strong>
                     </p>
@@ -256,7 +256,7 @@ function Accueil() {
                     </div>
                     </div>
                   </div>
-                  <div className=" col-5  d-flex justify-content-end align-items-center images" style={{ height:"300px"  }}>
+                  <div className=" col-sm  d-flex justify-content-end align-items-center images" style={{ height:"300px"  }}>
                     <div style={{ 
                                   bacgroundSize:"cover",
                                   backgroundRepeat: "no-repeat",
