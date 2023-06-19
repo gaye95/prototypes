@@ -65,13 +65,12 @@ function Accueil() {
     <img src={store} alt="images" />,
     <img src={tayeur} alt="images" />
   ];
-  const icones = [<CiFacebook />, <CiInstagram />, <CiLinkedin />, <CiTwitter />];
 
   return ( 
     <div className="accueil">
-      <header>
+      <section>
         <Contact/>
-      </header>
+      </section>
       <section><Navebar /></section>
       <section>
       <div
