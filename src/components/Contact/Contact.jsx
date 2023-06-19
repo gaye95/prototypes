@@ -1,7 +1,4 @@
 import "./Contact.css";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import React from "react";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { FcPhoneAndroid } from "react-icons/fc";
@@ -16,23 +13,23 @@ function Contact() {
 
     <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3  d-flex justify-content-end">
+        <div class="col-md d-flex justify-content-end">
           <div className="d-flex">
             <BsEnvelopeFill className="my-1" style={{ color: "#0bcad4" }} /><h6 className="mx-1 my-1">contact.fewnu@gmail.com</h6>
           </div>
       </div>
-        <div class="col-md-3 d-flex">
+        <div class="col-md d-flex">
           <div className="d-flex">
             <FcPhoneAndroid className="my-1" style={{ color:"#0bcad4" }} /><h6 className="my-1">+221781646424</h6>
           </div>
         </div>
-      <div class="col-md-3 d-flex justify-content-end">
+      <div class="col-md d-flex justify-content-end">
       <h6 className="my-1 d-flex align-items-center">Nous suivre</h6>
       {
         icones.map((icone)=><div className="mx-1 my-2">{icone}</div>)
       }
       </div>
-      <div class="col-md-3 d-flex justify-content-end">
+      <div class="col-md d-flex justify-content-end">
       <img style={{ height: "25px", width: "25px" }} src={france} alt="langues" />
       <form action="#">
         <select style={{ border:"none" }} name="languages" id="lang">

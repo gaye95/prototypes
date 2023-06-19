@@ -25,13 +25,6 @@ import tayeur from "../../assets/tayeur.png";
 import volkeno from "../../assets/volkeno.png";
 import ambassadeur from "../../assets/ambassadeur.png";
 import CarteApp from "../../components/CarteApp/CarteApp";
-import { BsEnvelopeFill } from "react-icons/bs";
-import { FcPhoneAndroid } from "react-icons/fc";
-import { CiFacebook } from "react-icons/ci";
-import { CiInstagram } from "react-icons/ci";
-import { CiLinkedin } from "react-icons/ci";
-import { CiTwitter } from "react-icons/ci";
-import france from "../../assets/france.jpg";
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -74,17 +67,14 @@ function Accueil() {
       <section><Navebar /></section>
       <section>
       <div
-            className = "image"
+            className = "container-fluid"
             style = {{
-               height: "668px",
-               width: "100%",
                backgroundImage: `url(${tel})`,
                backgroundSize: "cover",
                backgroundRepeat: "no-repeat",
                backgroundPosition:"none"
             }}
          >
-        <div className="container">
           <div className="row">
           <div className="col-8">
           <div style={{ marginTop:"100px" }}>
@@ -107,15 +97,18 @@ function Accueil() {
                     Le lorem ipsum est, en imprimerie
                     </strong>
                 </p>
-                </div>
+                </div>  
           </div>
           </div>
           </div>
-          <div className="d-flex my-5" style={{ backgroundColor :"white" , borderRadius:"50px", width:"40%"}}>
+          <div className="row">
+          <div className="d-flex text-center p-1 text-white" style={{ backgroundColor:"#0bcad4", width:"25%", borderRadius:"50px" }}>
           <button className="p-4" style={{ backgroundColor:"#005368", color:"white", border:"none", borderRadius:"50px"}}><FaArrowRight/></button>
-          <div className="p-2 d-flex align-items-center" style={{ color:"#39d4dc", border:"none", borderRadius:"20px"}}><h3>Regarder la présentation</h3></div>
+          <div className="d-flex align-items-center text-center p-1 text-white" style={{ backgroundColor:"#0bcad4", width:"", borderRadius:"50px" }}>
+            <h5 className="">Regarder la presentation</h5>
           </div>
-        </div>
+          </div>
+          </div>
       </div>
       </section>
       <section>
