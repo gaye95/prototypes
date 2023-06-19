@@ -67,7 +67,7 @@ function Accueil() {
       <section><Navebar /></section>
       <section>
       <div
-            className = "container-fluid"
+            className = "container-fluid p-5"
             style = {{
                backgroundImage: `url(${tel})`,
                backgroundSize: "cover",
@@ -150,17 +150,15 @@ function Accueil() {
       </div>
       </section>
       <section>
-      <div className="container">
+      <div className="container p-5">
         <div>
           <h4 className="text-start"><strong>Nos applications</strong></h4>
         </div>
-        <div className="d-flex justify-content-between">
-        <div className="row d-flex justify-content-center justify-content-evenly">
+        <div className="row d-flex justify-content-center justify-content-evenly p-5">
             {
               applications.map((el)=><Appli photo={el.photo} titre={el.titre} texte={el.texte}/>)
             }
         </div>
-          </div>
       </div>
       </section>
       <section>
@@ -176,7 +174,7 @@ function Accueil() {
         </div>
       </section>
       <section style={{backgroundColor:'#f2f2f2'}}>
-      <div className="container py-5" style={{backgroundColor:'#f2f2f2'}}>
+      <div className="container p-5" style={{backgroundColor:'#f2f2f2'}}>
       <div><h4 className="text-start"><strong>Pourquoi Fewnu </strong></h4></div>
         <div className="row d-flex justify-content-center justify-content-evenly p-5"> 
             {
@@ -231,19 +229,20 @@ function Accueil() {
                       <BsCheckCircle className="my-1" style={{ color:"#0bcad4", width:"200px" }}/>
                       <p className="text-start">
                       <strong>
-                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
-                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
-                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
-                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
-                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
-                        Le lorem ipsum provisoire est, en imprimerie est, en imprimerie
+                      Le lorem ipsum est, en imprimerie, une suite de mots sans signification
+                      utilisée à titre provisoire pour calibrer une mise en page, le
+                      texte définitif venant remplacer le faux Le lorem ipsum est, en imprimerie, une suite de mots sans signification
+                      utilisée à titre provisoire pour calibrer une mise en page, le
+                      texte définitif venant remplacer le faux Le lorem ipsum est, en imprimerie, une suite de mots sans signification
+                      utilisée à titre provisoire pour calibrer une mise en page, le
+                      texte définitif venant remplacer le faux
                       </strong>
                       </p>
                     </div>
                     <div className="pluse d-flex">
                     <div>
                     <button className=" text-white p-2" style={{ backgroundColor:"#0bcad4", borderRadius:"50px" }}>
-                      EN SAVOIR PLUS
+                      SAVOIR PLUS
                     </button>
                     </div>
                     <div className="d-flex">
@@ -251,23 +250,16 @@ function Accueil() {
                     <TbPhoneCall className="mx-auto" style={{ color:"#0bcad4" }}/>
                     </button>
                     <div className="text-start">
-                      <p>Hotline<br/><strong>78 164 64 24</strong></p>
+                      <p>Hotline<br/><strong>781646424</strong></p>
                     </div>
                     </div>
                     </div>
                   </div>
-                  <div className=" col-sm  d-flex justify-content-end align-items-center images" style={{ height:"300px"  }}>
-                    <div style={{ 
-                                  bacgroundSize:"cover",
-                                  backgroundRepeat: "no-repeat",
-                                  height:"400px",
-                                  width:"90%",
-                                  backgroundImage: `url(${bleu})`,
-                                  position:"relative",
-                                  marginTop:"250px",
-                      }}>
-                      <img className="images py-5" src={ambassadeur} alt="images"  style={{ height:"1233px", width:"950", marginTop:"-505px"}}/>
-                    </div>
+                <div className=" col-sm position-relative d-flex justify-content-end align-items-center images"
+                  >
+                    <img className='' src={ambassadeur} alt="images" style={{
+                      marginTop:"-25px"
+                  }}/>
                   </div>
                 </div>
                 </div>
