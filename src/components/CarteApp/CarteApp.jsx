@@ -5,8 +5,7 @@ import equipe from "../../assets/equipe.png";
 
 function CarteApp({nom, profession, texte}) {
   return (
-    <div className="col-md-4 d-flex justify-content-center">
-    <Card className="col-md-12 shadow mb-5 bg-body rounded" style={{ width: '18rem', border:'none' }}>
+    <Card className="shadow mb-5 bg-body rounded" style={{ width: '18rem', border:'none' }}>
       <Card.Body>
         <Card.Title className="d-flex justify-content-center">
           <img src={equipe} alt="images" style={{ width:"75px", height:"75px", borderRadius:'50%' }}/>
@@ -18,7 +17,6 @@ function CarteApp({nom, profession, texte}) {
         </Card.Text>
       </Card.Body>
     </Card>
-    </div>
   );
 };
 

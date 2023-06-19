@@ -24,7 +24,14 @@ import store from "../../assets/store.png";
 import tayeur from "../../assets/tayeur.png";
 import volkeno from "../../assets/volkeno.png";
 import ambassadeur from "../../assets/ambassadeur.png";
-import CarteApp    from "../../components/CarteApp/CarteApp";
+import CarteApp from "../../components/CarteApp/CarteApp";
+import { BsEnvelopeFill } from "react-icons/bs";
+import { FcPhoneAndroid } from "react-icons/fc";
+import { CiFacebook } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { CiLinkedin } from "react-icons/ci";
+import { CiTwitter } from "react-icons/ci";
+import france from "../../assets/france.jpg";
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -58,11 +65,15 @@ function Accueil() {
     <img src={store} alt="images" />,
     <img src={tayeur} alt="images" />
   ];
+  const icones = [<CiFacebook />, <CiInstagram />, <CiLinkedin />, <CiTwitter />];
 
   return ( 
     <div className="accueil">
-      <header><Contact /></header>
+      <header>
+        <Contact/>
+      </header>
       <section><Navebar /></section>
+      <section>
       <div
             className = "image"
             style = {{
@@ -107,6 +118,8 @@ function Accueil() {
           </div>
         </div>
       </div>
+      </section>
+      <section>
       <div className="container-fluid">
         <div className="row p-5">
           <div className="col-md-6 text-start">
@@ -143,18 +156,21 @@ function Accueil() {
           </div>
         </div>
       </div>
-      <div className="container py-5">
+      </section>
+      <section>
+      <div className="container">
         <div>
           <h4 className="text-start"><strong>Nos applications</strong></h4>
         </div>
-        <div className="d-flex justify-content-between p-5">
-        <div className="row d-flex justify-content-center justify-content-evenly p-5">
+        <div className="d-flex justify-content-between">
+        <div className="row d-flex justify-content-center justify-content-evenly">
             {
               applications.map((el)=><Appli photo={el.photo} titre={el.titre} texte={el.texte}/>)
             }
         </div>
           </div>
       </div>
+      </section>
       <section>
         <div className="animé"
           style = {{
