@@ -11,8 +11,6 @@ import Appli from "../../components/Appli/Appli";
 import tel from "../../assets/tel.png";
 import Ellipse1 from "../../assets/Ellipse1.png";
 import Ellipse2 from "../../assets/Ellipse2.png";
-import bleue from "../../assets/bleue.png";
-import bleu from "../../assets/bleu.png";
 import images from "../../assets/images.png";
 import logofewnu from "../../assets/logofewnu.jpg";
 import CarteEquip from "../../components/CarteEquip/CarteEquip";
@@ -25,6 +23,7 @@ import tayeur from "../../assets/tayeur.png";
 import volkeno from "../../assets/volkeno.png";
 import ambassadeur from "../../assets/ambassadeur.png";
 import CarteApp from "../../components/CarteApp/CarteApp";
+import Carouselle from "../../components/Carouselle/Carouselle"
 function Accueil() {
   const applications = [
     { photo: <img src={logofewnu} alt="logo" style={{ width: "120px", margin: "0 auto" }} />, texte: "faciliter de bien gerer l'activité economique d'une entreprise" },
@@ -36,7 +35,7 @@ function Accueil() {
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Accécibilité en ligne", texte: "en imprimerie, une suite de mots sans signification" },
     { icone: <FaHandHoldingHeart style={{ margin: "0 auto" }} size="50" />, titre: "Suivie commerciale", texte: "en imprimerie, une suite de mots sans signification" }
   ];
-
+  
   const carteapps= [
     { nom:"Alkaly Badji", profession:"Dev Backend", texte:'Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux' },
     { nom:"Oumy", profession:"Dev, web", texte:'Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux' },
@@ -161,17 +160,8 @@ function Accueil() {
         </div>
       </div>
       </section>
-      <section>
-        <div className="animé"
-          style = {{
-            height: "668px",
-            width: "100%",
-            backgroundImage: `url(${bleue})`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-        }}
-        >
-        </div>
+      <section  className="animé">
+        
       </section>
       <section style={{backgroundColor:'#f2f2f2'}}>
       <div className="container p-5" style={{backgroundColor:'#f2f2f2'}}>
@@ -275,6 +265,9 @@ function Accueil() {
               }
             </div>
           </div>
+        </section>
+        <section className="animé p-5" style={{ backgroundColor:"#f2f2f2" }}>
+        <Carouselle/>
         </section>
           <section className="bg-dark p-3">
             <div className="container">
