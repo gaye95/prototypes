@@ -28,16 +28,16 @@ function Carouselle() {
     <Carousel responsive={responsive}>
         <div className="card mx-auto p-2" style={{ width:"50%" }}>
           <img className="image--product" src={equipe} alt="equipe" />
-          <p>Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux</p>
+          <p>Le lorem ipsum  titre provisoire  définitif venant remplacer le faux</p>
         </div>
         <div className="card mx-auto p-2" style={{ width:"50%" }}>
           <img className="image--product" src={equipe} alt="equipe" />
-          <p>Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux</p>
+          <p>Le lorem ipsum  titre provisoire  définitif venant remplacer le faux</p>
         </div>
       <div className="card mx-auto p-2" style={{ width:"50%" }}>
         <img className="image--product" src={equipe} alt="equipe" />
-        <p>Le lorem ipsum est en ,imprimerie une suite de mots sans significationc utilisée à titre provisoire pour calibrer une mise en page le texte définitif venant remplacer le faux</p>
-    </div>
+        <p>Le lorem ipsum  titre provisoire  définitif venant remplacer le faux</p>
+        </div>
     <div className="card mx-auto p-2" style={{ width:"50%" }}>
           <img className="image--product" src={equipe} alt="equipe" />
           <p>Le lorem ipsum  titre provisoire  définitif venant remplacer le faux</p>
