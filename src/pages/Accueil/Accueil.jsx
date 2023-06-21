@@ -142,7 +142,7 @@ function Accueil() {
             <h5>Commencer maintenant</h5>
             </div>
           </div>
-          <div className="col-md-6" style={{ backgroundColor:"#f5f5f5" }}>
+          <div className="col-md-6" style={{ backgroundColor:"#e6e2e2" }}>
             <img src={images} alt="images"/>
           </div>
         </div>
