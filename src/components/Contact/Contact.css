@@ -1,0 +1,15 @@
+.large{
+    display: inline-block;
+}
+
+@media screen and (min-width: 320px) and (max-width: 578px)
+
+{
+
+    .large {
+
+        display: none;
+        
+        }
+
+}

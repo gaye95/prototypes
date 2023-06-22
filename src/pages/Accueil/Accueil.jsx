@@ -65,7 +65,7 @@ function Accueil() {
       </section>
       <section><Navebar /></section>
       <section>
-      <div
+      <div  
             className = "container-fluid p-5"
             style = {{
                backgroundImage: `url(${tel})`,
@@ -143,7 +143,7 @@ function Accueil() {
             </div>
           </div>
           <div className="col-md-6" style={{ backgroundColor:"#e6e2e2" }}>
-            <img src={images} alt="images"/>
+            <img classNamme="my-auto" src={images} alt="images"/>
           </div>
         </div>
       </div>

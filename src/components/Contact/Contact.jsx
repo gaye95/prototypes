@@ -11,9 +11,9 @@ function Contact() {
   const icones = [<CiFacebook />, <CiInstagram />, <CiLinkedin />, <CiTwitter />];
   return (
 
-    <div class="container-fluid">
+    <div class="container-fluid large">
     <div class="row">
-        <div class="col-md d-flex justify-content-end">
+        <div class="col-md  d-flex justify-content-end">
           <div className="d-flex">
             <BsEnvelopeFill className="my-1" style={{ color: "#0bcad4" }} /><h6 className="mx-1 my-1">contact.fewnu@gmail.com</h6>
           </div>
