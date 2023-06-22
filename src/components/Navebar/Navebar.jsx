@@ -5,13 +5,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import logofewnu from "../../assets/logofewnu.jpg";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navebar() {
-  const navigate = useNavigate();
-  const HandleClick = () => {
-      navigate('/apropos');
-  }
+  
   
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
